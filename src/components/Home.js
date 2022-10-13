@@ -2,8 +2,16 @@ import React from "react";
 import { name, city } from "../data/data.js";
 
 function Home() {
+  const h1Style = {
+    color: 'firebrick',
+    WebkitTransition: 'all',
+    msTransition: 'all'
+  }
+
   // update the JSX being returned!
-  return <div>Home</div>;
+  return <div id="home">Home
+    <h1 style={h1Style}>{name} is a Web Developer from {city}</h1> 
+  </div>;
 }
 
 export default Home;
